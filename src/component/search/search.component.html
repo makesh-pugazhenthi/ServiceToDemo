@@ -1,0 +1,11 @@
+<body>
+  <div class="a-search-container">  
+          <div class="search-container">
+        <input class="input" type="text" matInput [formControl]="filter" placeholder="Search Cities...">
+
+        <ul>
+          <li class="entBox" *ngFor="let cities of filteredCities$ | async">{{cities.City}}</li>
+        </ul>
+      </div>    
+</div>
+</body>
